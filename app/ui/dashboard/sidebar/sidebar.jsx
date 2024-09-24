@@ -20,13 +20,13 @@ const menuItems = [
             { title: "Dashboard", path: "/dashboard", icon: <MdDashboard /> },
             { title: "Transaksi", path: "/dashboard/transaksi", icon: <MdAttachMoney /> },
             { title: "Anggota", path: "/dashboard/anggota", icon: <MdSupervisedUserCircle /> },
-            { title: "Laporan", path: "/dashboard/laporan", icon: <MdAnalytics /> },
+            { title: "Laporan", path: "/nopage", icon: <MdAnalytics /> },
         ],
     },
     {
         title: "Akun",
         list: [
-            { title: "Pengaturan", path: "/dashboard/pengaturan", icon: <MdOutlineSettings /> },
+            { title: "Pengaturan", path: "/nopage", icon: <MdOutlineSettings /> },
         ],
     },
 ];
