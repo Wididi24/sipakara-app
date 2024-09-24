@@ -1,0 +1,32 @@
+.container {
+    height: 450px; /* Fixed height for the entire chart */
+    background-color: var(--bgSoft);
+    padding: 15px; /* Added padding for better spacing */
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.title {
+    font-weight: bold;
+    color: var(--text);
+    font-size: 1.5rem; /* Increased font size */
+    margin-bottom: 5px; /* Adjusted margin */
+    text-align: center; /* Centered title */
+}
+
+.chartWrapper {
+    height: 100%; /* Full height of the container */
+    border-radius: 10px; /* Consistent border radius */
+}
+
+.tooltip {
+    background-color: rgb(255, 255, 255); /* Semi-transparent background for the tooltip */
+    border: 1px solid var(--text); /* Added border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for better spacing */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.recharts-text {
+    white-space: nowrap; /* Prevents wrapping */
+}

@@ -1,0 +1,69 @@
+.modal {
+    border: 5px solid var(--bgSoft);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: fixed; /* Change to fixed to position relative to viewport */
+    width: 800px;
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Start at the center vertically */
+    transform: translate(-50%, -50%); /* Center the modal */
+    box-shadow: var(--boxShadow);
+}
+
+/* Additional styles to adjust the vertical position */
+.modal {
+    top: calc(50% - 200px); /* Adjust this value to move it higher (150px as an example) */
+}
+
+.modalTitle {
+    color: var(--bgSoft);
+    font-size: 25pt;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input, .select {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 15pt;
+    border: 4px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submitButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.closeButton {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.submitButton:hover, .closeButton:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,26 @@
+.container{
+    width: 550px;
+    background-color: var(--bgSoft);
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;   
+    box-shadow: var(--boxShadow);
+}
+
+.container:hover{
+    background-color: var(--sidebarHover);
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20pt;
+}
+
+.number{
+    font-size: 25pt;
+    font-weight: bold;
+}

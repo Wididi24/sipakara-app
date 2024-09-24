@@ -1,0 +1,33 @@
+.container{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: medium;
+}
+
+.button{
+    margin-top: 25px;
+    padding: 10px 10px;
+    cursor: pointer;
+    background-color: var(--sidebarColor);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover{
+    background-color: var(--buttonHover);
+}
+
+.button:disabled{
+    cursor: not-allowed;
+    background-color: var(--disallowed);
+}
+
+ 

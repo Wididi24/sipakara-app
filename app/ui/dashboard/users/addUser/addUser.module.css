@@ -1,0 +1,65 @@
+.container {
+  background-color: var(--bgSoft);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: var(--boxShadow);
+  display: flex; /* Mengatur tata letak secara horizontal */
+  gap: 20px; /* Menambahkan jarak antara infoContainer dan formContainer */
+}
+
+.infoContainer {
+  flex: 1; /* Mengatur agar container gambar mengambil ruang yang proporsional */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgWrapper {
+  background-color: white; /* Background putih di sekeliling gambar */
+  padding: 15px; /* Padding untuk memberi ruang antara gambar dan wrapper */
+  border-radius: 15px; /* Border-radius pada background putih */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.imgContainer {
+  width: 250px; /* Ukuran gambar */
+  height: 250px;
+  position: relative; /* Dibutuhkan untuk Image fill */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran (opsional) */
+  overflow: hidden; /* Memastikan gambar tidak melampaui container */
+}
+
+.formContainer {
+  flex: 2; /* Memberikan ruang lebih pada form */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form input {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  color: black;   
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--sidebarHover);
+  color: var(--text);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

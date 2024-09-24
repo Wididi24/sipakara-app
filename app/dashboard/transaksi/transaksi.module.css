@@ -1,0 +1,79 @@
+.container{
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: var(--boxShadow);
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.addButton{
+    padding: 15px;
+    background-color: var(--sidebarColor);
+    color: var(--text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+    font-weight: bold;
+}
+
+.addButton:hover{
+    background-color: var(--buttonHover);
+}
+
+.title{
+    margin-bottom: 20px;
+    font-weight: 350;
+    color: var(--text);
+}
+
+.table{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.table td{
+    padding: 10px;
+}
+
+.user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.userImage{
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.jenis{
+    border-radius: 30px;
+    margin-left: 13px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.simpan{
+    color: #008000;
+    padding: 10px 30px;
+    background-color: white;
+}
+
+.pinjam{
+    color: #ff4500;
+    padding: 10px 30px;
+    background-color: white;
+}

@@ -1,0 +1,38 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./db/sipakara_web.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Anggota {
+  id        Int         @id @default(autoincrement())
+  fullname  String
+  username  String      @unique
+  phone     String
+  status    String
+  transaksi Transaksi[]
+}
+
+model Admin {
+  id       Int    @id @default(autoincrement())
+  username String @unique
+  password String
+}
+
+model Transaksi {
+  id             Int      @id @default(autoincrement())
+  jenisTransaksi String // bisa 'simpan' atau 'pinjam'
+  nominal        Float
+  tanggal        DateTime @default(now())
+  anggotaId      Int
+  anggota        Anggota  @relation(fields: [anggotaId], references: [id])
+}
