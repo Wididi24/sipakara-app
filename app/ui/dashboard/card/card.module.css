@@ -1,9 +1,9 @@
 .container{
-    width: 550px;
+    flex-direction: column;
+    width: 100%;
     background-color: var(--bgSoft);
     padding: 25px;
-    border-radius: 10px;
-    display: flex;
+    border-radius: 10px;;
     gap: 20px;
     cursor: pointer;   
     box-shadow: var(--boxShadow);
