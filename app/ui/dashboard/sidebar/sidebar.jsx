@@ -19,14 +19,12 @@ const menuItems = [
         list: [
             { title: "Dashboard", path: "/dashboard", icon: <MdDashboard /> },
             { title: "Transaksi", path: "/dashboard/transaksi", icon: <MdAttachMoney /> },
-            { title: "Anggota", path: "/dashboard/anggota", icon: <MdSupervisedUserCircle /> },
-            { title: "Laporan", path: "/nopage", icon: <MdAnalytics /> },
+            { title: "Anggota", path: "/dashboard/anggota", icon: <MdSupervisedUserCircle /> }
         ],
     },
     {
         title: "Akun",
         list: [
-            { title: "Pengaturan", path: "/nopage", icon: <MdOutlineSettings /> },
         ],
     },
 ];

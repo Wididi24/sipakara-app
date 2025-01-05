@@ -83,31 +83,31 @@ const TransaksiPage = ({ searchParams }) => {
                         <td>Nominal</td>
                     </tr>
                 </thead>
-                <tbody>
-                    {transaksi.map((trx) => (
-                        <tr key={trx.id}>
+                        <tbody>
+                            {transaksi.map((trx) => (
+                            <tr key={trx.id}>
                             <td>
-                                <div className={styles.user}>
-                                    <Image
-                                        src="/noavatar.png"  // Avatar placeholder
-                                        alt="avatar"
-                                        width={40}
-                                        height={40}
-                                        className={styles.userImage}
-                                    />
-                                    {trx.anggota.fullname}
-                                </div>
-                            </td>
-                            <td>
-                                <span className={`${styles.jenis} ${styles[trx.jenisTransaksi.toLowerCase()]}`}>
-                                    {trx.jenisTransaksi}
-                                </span>
-                            </td>
-                            <td>{new Date(trx.tanggal).toLocaleDateString()}</td>
-                            <td>Rp{trx.nominal.toLocaleString('id-ID')}</td>
-                        </tr>
-                    ))}
-                </tbody>
+                            <div className={styles.user}>
+                            <Image
+                            src="/noavatar.png"  // Avatar placeholder
+                            alt="avatar"
+                            width={40}
+                            height={40}
+                            className={styles.userImage}
+                            />
+                            {trx.anggota ? trx.anggota.fullname : "Anggota Lama"}
+                        </div>
+                        </td>
+                        <td>
+                            <span className={`${styles.jenis} ${styles[trx.jenisTransaksi.toLowerCase()]}`}>
+                                {trx.jenisTransaksi}
+                            </span>
+                        </td>
+                        <td>{new Date(trx.tanggal).toLocaleDateString()}</td>
+                        <td>Rp{trx.nominal.toLocaleString('id-ID')}</td>
+                            </tr>
+                            ))}
+                        </tbody>
             </table>
             <Pagination currentPage={page} totalPages={totalPages} />
             <ModalForm 

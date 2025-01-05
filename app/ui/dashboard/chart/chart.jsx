@@ -57,7 +57,7 @@ const Chart = () => {
                         data={data}
                         margin={{ top: 10, right: 20, left: 40, bottom: 0 }} // Increased left margin
                     >
-                        <CartesianGrid stroke="grey" strokeDasharray="0 0" />
+                        <CartesianGrid stroke="white" strokeDasharray="0 0" />
                         <XAxis 
                             dataKey="month" 
                             tick={{ fill: 'white', fontWeight: 'bold', fontSize: '15px' }} // Set fontSize as a string

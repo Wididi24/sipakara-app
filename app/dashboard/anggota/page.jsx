@@ -11,7 +11,7 @@ const prisma = new PrismaClient();
 
 // Server action to handle deletion
 export const deleteAnggota = async (id) => {
-    "use server"; // Mark this as a server action
+    "use server";
 
     try {
         await prisma.anggota.delete({
@@ -25,6 +25,7 @@ export const deleteAnggota = async (id) => {
 
     redirect('/dashboard/anggota');
 };
+
 
 // Fetch members with pagination
 const getAnggota = async (page = 1, limit = 5) => {
